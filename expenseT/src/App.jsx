@@ -1,7 +1,5 @@
-import Header from "./Components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs";
+import Expense from "./Components/Expense";
 
 export default function App() {
   return (
@@ -9,7 +7,7 @@ export default function App() {
       <BrowserRouter>
         {/* <Header /> */}
         <Routes>
-          <Route path="/" element={<AboutUs />} />
+          <Route path="/" element={<Expense />} />
         </Routes>
       </BrowserRouter>
     </main>
